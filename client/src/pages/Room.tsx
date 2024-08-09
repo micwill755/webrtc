@@ -33,6 +33,7 @@ export const Room = () => {
             : peers[screenSharingId]?.stream;
 
     const { [screenSharingId]: sharing, ...peersToShow } = peers;
+    console.log(peersToShow)
     return (
         <div className="flex flex-col min-h-screen">
             <div className="bg-red-500 p-4 text-white">Room id {id}</div>
